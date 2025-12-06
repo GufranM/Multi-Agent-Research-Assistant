@@ -1,0 +1,10 @@
+langgraph 
+langchain 
+langchain-community 
+langchain-huggingface 
+pydantic 
+wikipedia 
+duckduckgo-search 
+streamlit 
+numexpr
+ddgs

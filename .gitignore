@@ -1,0 +1,57 @@
+# -------------------------------------------------------------------
+# General Python Artifacts
+# -------------------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info
+.python-version
+.pytest_cache/
+
+# -------------------------------------------------------------------
+# Virtual Environments (Venvs)
+# -------------------------------------------------------------------
+# Virtual environment directories
+venv/
+env/
+.venv/
+build/
+develop-eggs/
+dist/
+
+# -------------------------------------------------------------------
+# Operating System & Editor Files
+# -------------------------------------------------------------------
+.DS_Store
+.vscode/
+
+# -------------------------------------------------------------------
+# Sensitive/Local Files
+# -------------------------------------------------------------------
+# File to store environment variables and API keys (REQUIRED for your project)
+.env
+.flaskenv
+
+# Local secrets/credentials file
+secrets.json
+
+# -------------------------------------------------------------------
+# Logs, Databases, and Cache
+# -------------------------------------------------------------------
+*.log
+*.sqlite
+*.db
+
+# -------------------------------------------------------------------
+# Specific to ML/LLM Frameworks (LangChain, Hugging Face, etc.)
+# -------------------------------------------------------------------
+
+# Hugging Face Cache (where models/datasets might be downloaded)
+.huggingface/
+.cache/
+hf_cache/
+
+# General ML artifacts
+checkpoints/
+runs/
