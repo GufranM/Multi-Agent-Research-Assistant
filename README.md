@@ -1,4 +1,4 @@
-🤖 Multi-Agent Research Assistant (LangGraph + Structured Output)
+## 🤖 **Multi-Agent Research Assistant (LangGraph + Structured Output)**
 
 This project implements an autonomous, multi-agent system designed to conduct research, analyze findings, write reports, and refine the output through a continuous critique-revision loop.
 
