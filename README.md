@@ -25,7 +25,42 @@ Try it here: [https://huggingface.co/spaces/GhufranAI/Multi_Agent_Research_Assis
 - **Pydantic** - Data validation
 
 ## 📊 Architecture
-[Add your architecture diagram or description]
+**Agent Responsibilities**
+
+
+
+**🔍 Researcher Agent**
+
+- **Role**: Information gathering & tool orchestration
+- **Tools**: Web search (Tavily), Calculator, Knowledge base
+- **Decision Making**: Analyzes query to select optimal tool
+
+  - "latest news" → Web search
+  - "calculate 25*4" → Calculator
+  - "explain AI" → Knowledge base
+
+
+- **Output**: Raw information with source attribution
+
+**📊 Analyst Agent**
+
+- **Role**: Extract insights from research findings
+- **Capabilities**: Pattern recognition, theme identification
+- **Output**: Key points and implications
+
+**✍️ Writer Agent**
+
+- **Role**: Synthesize research into professional report
+- **Format**: Executive summary + findings + implications + sources
+- **Output**: Structured, citation-rich report
+
+**🎯 Critic Agent**
+
+- **Role**: Quality assurance & improvement trigger
+- **Evaluation**: Scores report on completeness, clarity, sourcing
+- **Decision**: Approve (≥8/10) or request revision
+
+**Output**: Quality score + feedback
 
 ## 🎯 Use Cases
 - Research current events
@@ -34,7 +69,15 @@ Try it here: [https://huggingface.co/spaces/GhufranAI/Multi_Agent_Research_Assis
 - Generate comprehensive reports
 
 ## 📸 Screenshots
-[Add 2-3 screenshots]
+[<img width="1917" height="997" alt="Screenshot 2025-12-21 210704" src="https://github.com/user-attachments/assets/ad4e8ea1-ed65-4200-a480-907643668c08" />
+
+
+
+<img width="1904" height="1029" alt="Screenshot 2025-12-21 213004" src="https://github.com/user-attachments/assets/e6c5f459-791b-4a01-94f0-8de0a8cd7747" />
+
+
+<img width="1828" height="1029" alt="Screenshot 2025-12-21 213035" src="https://github.com/user-attachments/assets/670bddc6-c635-4cce-893b-40328eb35cf3" />
+]
 
 ## 💻 Local Setup
 ```bash
