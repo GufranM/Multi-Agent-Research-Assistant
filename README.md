@@ -27,6 +27,8 @@ Try it here: [https://huggingface.co/spaces/GhufranAI/Multi_Agent_Research_Assis
 ## 📊 Architecture
 **Agent Responsibilities**
 
+![Agentic workflow simulator](Agentic%20workflow%20simulator.gif)
+
 
 
 **🔍 Researcher Agent**
