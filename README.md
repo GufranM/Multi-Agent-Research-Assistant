@@ -1,22 +1,50 @@
-## 🤖 **Multi-Agent Research Assistant (LangGraph + Advanced AI Agents)**
+# 🤖 Multi-Agent Research Assistant
 
-This project implements an autonomous, multi-agent system designed to conduct research, analyze findings, write reports, and refine the output through a continuous critique-revision loop.
+[![Demo](https://img.shields.io/badge/🤗-Demo%20on%20HF%20Spaces-yellow)](https://huggingface.co/spaces/GhufranAI/Multi_Agent_Research_Assistant_with_Tavily)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue)]()
 
-The system is orchestrated using LangGraph to manage the state and transitions between specialized agents, ensuring a robust and reliable workflow. Crucially, it relies on guaranteed structured output (using Pydantic and JSON mode) for all analysis and reporting steps, ensuring data integrity and stability.
+## 🌟 Overview
+This project implements a production-ready Agentic AI system featuring four specialized agents that collaborate to conduct research, analyze information, and generate high-quality reports. The system autonomously selects the appropriate tools (web search, calculator, knowledge base) based on query context, demonstrating true agentic behavior.
 
-✨ Key Features
-Cyclic Workflow: Uses a state machine (LangGraph) to loop between writing and critique until the final report meets quality standards.
+## ✨ Features
+- 🧠 Agentic AI Architecture: Autonomous decision-making with dynamic tool selection
+- 🤝 Multi-Agent Collaboration: Four specialized agents working in concert
+- 🔄 Iterative Refinement: Self-improving through critic feedback loops
+- 🔍 Intelligent Search: AI-optimized web search with Tavily + internal knowledge base
+- 🎨 Professional UI: Clean, modern Streamlit interface with real-time visualization
+- 📊 Source Attribution: Full transparency with citations and confidence scores
 
-Specialized Agents: Four distinct agents handle the end-to-end research process:
+## 🚀 Live Demo
+Try it here: [https://huggingface.co/spaces/GhufranAI/Multi_Agent_Research_Assistant_with_Tavily]
 
-Researcher 🔍: Gathers information using tools (Web Search, Wikipedia, Calculator).
+## 🛠️ Tech Stack
+- **LangGraph** - Agentic workflow orchestration
+- **Tavily** - AI-optimized search API
+- **Llama 3.1 8B** - Language model
+- **Streamlit** - Web interface
+- **Pydantic** - Data validation
 
-Analyst 📊: Extracts key findings, patterns, and implications from the raw research data.
+## 📊 Architecture
+[Add your architecture diagram or description]
 
-Writer ✍️: Compiles the structured analysis into a professional report.
+## 🎯 Use Cases
+- Research current events
+- Answer complex questions
+- Perform calculations
+- Generate comprehensive reports
 
-Critic 🎯: Evaluates the report and provides structured revision instructions.
+## 📸 Screenshots
+[Add 2-3 screenshots]
 
-Guaranteed Structured Output: All critical steps (Research, Analysis, Report, Critique) force the LLM to return valid Pydantic models (JSON), eliminating common parsing errors and dramatically improving reliability.
+## 💻 Local Setup
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-Hugging Face Endpoint: Utilizes the meta-llama/Llama-3.1-8B-Instruct model via the Hugging Face Inference API for powerful, yet accessible, language generation.
+## 🔑 API Keys
+- Hugging Face: https://huggingface.co/settings/tokens (FREE)
+- Tavily: https://tavily.com/ (1,000 searches/month free)
+
+## 📝 License
+MIT
